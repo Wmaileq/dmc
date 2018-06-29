@@ -1,0 +1,23 @@
+{
+  "name": "DropMyCase",
+  "version": "1.0.0",
+  "description": "DMC",
+  "author": "Vladislav Kirilenok",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "parallax-js": "^3.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "gulp-include": "^2.3.1"
+  }
+}

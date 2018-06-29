@@ -1,0 +1,691 @@
+.topmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  width: 100%;
+  height: 105px;
+  padding-left: 312px;
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+  transition: all 0.2s;
+  @media (max-width: 1670px) {
+    padding-left: 250px;
+  }
+  @media (max-width: 1620px) {
+    padding-left: 230px;
+  }
+  @media (max-width: 1599px) {
+    height: 90px;
+  }
+  @media (max-width: 1480px) {
+    padding-left: 180px;
+  }
+  @media (max-width: 1420px) {
+    padding-left: 210px;
+  }
+  @media (min-width: 1200px) and (max-width: 1320px) {
+    padding-left: 0;
+    left: 160px;
+    width: calc(100% - 160px);
+    z-index: 2000;
+  }
+  @media (max-width: 1000px) {
+    padding-left: 0;
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    padding-right: 80px;
+    height: 80px;
+  }
+  @media (max-width: 420px) {
+    height: 60px;
+    align-items: center;
+  }
+  &_dark {
+    background-color: rgba(0,0,0,0.7);
+  }
+  &__what {
+    margin-right: 86px;
+    width: 100px;
+    padding-top: 45px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #566767;
+    cursor: pointer;
+    @media (max-width: 1599px) {
+      padding-top: 35px;
+    }
+    @media (max-width: 1500px) {
+      margin-right: 40px;
+    }
+    @media (max-width: 1420px) {
+      display: none;
+    }
+
+  }
+  &__menu {
+    display: flex;
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+  &__item {
+    width: 204px;
+    padding-top: 45px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    transform: skewX(-25deg);
+    background-color: transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+    @media (max-width: 1599px) {
+      width: 180px;
+      padding-top: 38px;
+    }
+    @media (min-width: 1200px) and (max-width: 1320px) {
+      transform: none;
+    }
+    @media (max-width: 1000px) {
+      transform: none;
+    }
+    @media (min-width: 1200px) and (max-width: 1260px) {
+      width: 150px;
+      padding-top: 35px;
+    }
+    @media (max-width: 640px) {
+      padding-top: 28px;
+      width: 33%;
+    }
+    span {
+      position: relative;
+      display: block;
+      height: 40px;
+      padding-left: 40px;
+      transform: skewX(25deg);
+      transition: all 0.2s;
+      @media (min-width: 1200px) and (max-width: 1320px) {
+        transform: none;
+      }
+      @media (min-width: 1200px) and (max-width: 1260px) {
+        padding-left: 25px;
+      }
+      @media (max-width: 1000px) {
+        transform: none;
+      }
+      @media (max-width: 600px) {
+        padding-left: 20px;
+      }
+      @media (max-width: 500px) {
+        font-size: 0;
+      }
+      &:before {
+        transition: all 0.2s;
+      }
+    }
+
+    &_csgo {
+      box-shadow: 0 0 0 0 rgba(#1793c6, 0.35);
+      span {
+        &:before {
+          content: '';
+          position: absolute;
+          left: 40px;
+          top: 0;
+          height: 27px;
+          width: 27px;
+          background: url('/img/icons/csgo.svg') center center no-repeat;
+          background-size: cover;
+          @media (min-width: 1200px) and (max-width: 1260px) {
+            left: 15px
+          }
+          @media (max-width: 600px) {
+            left: 25px
+          }
+          @media (max-width: 540px) {
+            left: 10px
+          }
+          @media (max-width: 500px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+    &_pubg {
+      border-right: 1px solid #2e4853;
+      span {
+        padding-left: 68px;
+        @media (min-width: 1200px) and (max-width: 1260px) {
+            padding-left: 40px;
+          }
+        &:before {
+          content: '';
+          position: absolute;
+          left: 40px;
+          top: -2px;
+          height: 27px;
+          width: 46px;
+          background: url('/img/icons/pubg.svg') center center no-repeat;
+          background-size: cover;
+          @media (min-width: 1200px) and (max-width: 1260px) {
+            left: 15px
+          }
+          @media (max-width: 600px) {
+            left: 35px
+          }
+          @media (max-width: 540px) {
+            left: 20px
+          }
+          @media (max-width: 500px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+    &_dota span {
+      padding-left: 50px;
+      @media (min-width: 1200px) and (max-width: 1260px) {
+        padding-left: 25px
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 48px;
+        top: -2px;
+        height: 30px;
+        width: 27px;
+        background: url('/img/icons/dota.svg') center center no-repeat;
+        background-size: cover;
+        @media (min-width: 1200px) and (max-width: 1260px) {
+          left: 15px
+        }
+        @media (max-width: 580px) {
+          left: 35px
+        }
+        @media (max-width: 540px) {
+          left: 20px
+        }
+        @media (max-width: 500px) {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &_csgo:hover, &_csgo.topmenu__item_active{
+      padding-top: 38px;
+      font-weight: 800;
+      font-size: 24px;
+      background: linear-gradient(202deg, #179fcd 50%, #1c348b 100%);
+      box-shadow: 0 0 60px 25px rgba(#1793c6, 0.35);
+      @media (max-width: 1420px) {
+        box-shadow: 0 0 40px 16px rgba(#1793c6, 0.35)
+      }
+      @media (max-width: 1599px) {
+        padding-top: 32px;
+        font-size: 22px;
+      }
+      @media (max-width: 640px) {
+        padding-top: 24px;
+      }
+      span {
+        padding-top: 7px;
+      }
+      span:before {
+        top: 7px;
+        background: url('/img/icons/csgo_active.svg') center center no-repeat;
+      }
+    }
+    &_pubg:hover, &_pubg.topmenu__item_active{
+      padding-top: 45px;
+      font-weight: 800;
+      font-size: 24px;
+      background: linear-gradient(202deg, #f42d18 50%, #fe7704 100%);
+      box-shadow: 0 0 60px 25px rgba(#f43316, 0.35);
+      @media (max-width: 1599px) {
+        padding-top: 40px;
+        font-size: 22px;
+      }
+      @media (max-width: 1420px) {
+        box-shadow: 0 0 40px 16px rgba(#f43316, 0.35)
+      }
+      @media (max-width: 640px) {
+        padding-top: 24px;
+      }
+      span:before {
+        background: url('/img/icons/pubg_active.svg') center center no-repeat;
+      }
+    }
+    &_dota:hover, &_dota.topmenu__item_active{
+      padding-top: 45px;
+      font-weight: 800;
+      font-size: 24px;
+      background: linear-gradient(202deg, #c64ef3 50%, #180fc3 100%);
+      box-shadow: 0 0 60px 25px rgba(#371acb, 0.35);
+      @media (max-width: 1599px) {
+        padding-top: 38px;
+        font-size: 22px;
+      }
+      @media (max-width: 1420px) {
+        box-shadow: 0 0 40px 16px rgba(#371acb, 0.35)
+      }
+      @media (max-width: 640px) {
+        padding-top: 24px;
+      }
+      span:before {
+        background: url('/img/icons/dota_active.svg') center center no-repeat;
+        @media (max-width: 1599px) {
+          top: 3px
+        }
+        @media (min-width: 500px) and (max-width: 640px) {
+          left: 22px
+        }
+      }
+    }
+  }
+
+  &__login {
+    margin-right: 65px;
+    display: flex;
+  }
+
+  &__login-text {
+    margin-right: 50px;
+    display: inline-block;
+    padding-top: 44px;
+    width: 105px;
+    color: #465454;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  &__vk {
+    position: relative;
+    margin-right: 54px;
+    padding-left: 50px;
+    padding-top: 54px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        color: #f8520e;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 72px;
+        left: 55px;
+        width: 65px;
+        height: 0;
+        box-shadow: 0 0 29px 4px rgba(#f8520e, 0.77);
+        transition: all 0.2s;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 52px;
+      left: 0;
+      width: 29px;
+      height: 29px;
+      background: url('/img/icons/vk.svg') center center no-repeat;
+      background-size: cover;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 72px;
+      left: 55px;
+      width: 65px;
+      height: 0;
+      box-shadow: 0 0 0 0 rgba(#f8520e, 0.77);
+      transition: all 0.2s;
+    }
+  }
+
+  &__steam {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 54px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: #f8520e;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 72px;
+        left: 55px;
+        width: 95px;
+        height: 0;
+        box-shadow: 0 0 29px 4px rgba(#f8520e, 0.77);
+        transition: all 0.2s;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 52px;
+      left: 0;
+      width: 29px;
+      height: 29px;
+      background: url('/img/icons/steam.svg') center center no-repeat;
+      background-size: cover;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 72px;
+      left: 55px;
+      width: 95px;
+      height: 0;
+      box-shadow: 0 0 0 0 rgba(#f8520e, 0.77);
+      transition: all 0.2s;
+    }
+  }
+
+  &__registered {
+    position: relative;
+    z-index: 5;
+    margin-right: 0;
+    display: flex;
+    width: 558px;
+    padding-left: 22px;
+    background-color: #1b1d1f;
+    @media (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      width: 50px;
+      z-index: 4;
+      height: 100%;
+      background-color: #1b1d1f;
+      transform: skewX(-25deg);
+      @media (max-width: 1320px) {
+        display: none;
+      }
+    }
+  }
+
+  &__avatar {
+    width: 70px;
+    margin-right: 22px;
+  }
+
+  &__info {
+    width: 125px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 5;
+    padding-top: 30px;
+    @media (max-width: 1599px) {
+      padding-top: 20px;
+    }
+    @media (max-width: 1260px) {
+      width: 100px;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__balance {
+    font-size: 14px;
+    color: #fd7604;
+  }
+
+  &__pencil {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-right: 26px;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+    @media (max-width: 1599px) {
+      padding-top: 30px;
+    }
+    &:hover {
+      transform: translateY(20px);
+      &:before {
+        box-shadow: 0 0 35px 10px rgba(#e86d06, 0.57);
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 52px;
+      width: 0;
+      height: 0;
+      box-shadow: 0 0 0 0 rgba(#e86d06, 0.57);
+    }
+    &:after {
+      content: 'Мой профиль';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 50px;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url('/img/icons/pencil.svg') center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__exit {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-right: 56px;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+    @media (max-width: 1599px) {
+      padding-top: 30px;
+    }
+    &:hover {
+      transform: translateY(20px);
+      &:before {
+        box-shadow: 0 0 35px 10px rgba(#e86d06, 0.57);
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 52px;
+      width: 0;
+      height: 0;
+      box-shadow: 0 0 0 0 rgba(#e86d06, 0.57);
+    }
+    &:after {
+      content: 'Выйти из профиля';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 50px;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url('/img/icons/exit.svg') center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__button {
+    position: relative;
+    margin-top: 30px;
+    width: 140px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(100deg, #ff8400 20%, #f21c1c 100%);
+    cursor: pointer;
+    transition: all 0.2s;
+    @media (max-width: 1599px) {
+      margin-top: 20px;
+    }
+    &:hover {
+      box-shadow: 0 0 16px 5px rgba(#ff8400, 0.55);
+      .topmenu__button-left {
+        box-shadow: 0 0 25px 20px rgba(#ff8400, 0.4);
+      }
+      .topmenu__button-right {
+        box-shadow: 0 0 25px 20px rgba(#ff8400, 0.4);
+      }
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      border: 22px solid transparent;
+      border-right: 22px solid #ff8400;
+      left: -44px;
+      transform: scale(1.02) translateX(0.7px)
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      border: 22px solid transparent;
+      border-left: 22px solid #f21c1c;
+      right: -44px;
+      transform: scale(1.02) translateX(-0.7px)
+    }
+
+    &-left {
+      position: absolute;
+      right: 0;
+      top: 22px;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 0 0 0 rgba(#ff8400, 0.4);
+    }
+    &-right {
+      position: absolute;
+      left: 0;
+      top: 22px;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 0 0 0 rgba(#ff8400, 0.4);
+    }
+  }
+
+  &__burger {
+    margin-left: auto;
+    @media (max-width: 1199px){
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      transform: translateX(100%);
+      .topmenu__registered {
+        width: 300px;
+        height: 100%;
+      }
+      .topmenu__pencil {
+        padding: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        &:after {
+          position: relative;
+          opacity: 1;
+          bottom: auto;
+          top: auto;
+        }
+        span {
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+      .topmenu__exit {
+        padding: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        &:after {
+          position: relative;
+          opacity: 1;
+          bottom: auto;
+          top: auto;
+        }
+        span {
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+      .topmenu__button {
+        margin-left: 30px;
+      }
+    }
+    &_active {
+      @media (max-width: 1199px) {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__burger-button {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 201;
+    width: 30px;
+    height: 30px;
+    background: url('/img/icons/menu.svg') center center no-repeat;
+    background-size: cover;
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+}

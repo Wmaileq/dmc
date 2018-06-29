@@ -1,0 +1,196 @@
+.filter {
+  position: relative;
+  z-index: 4;
+  margin-top: 15px;
+  @media (max-width: 840px) {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  @media (max-width: 570px) {
+    font-size: 0;
+  }
+  &__item {
+    position: relative;
+    padding-left: 38px;
+    margin-right: 78px;
+    font-size: 16px;
+    color: #748696;
+    transition: all 0.2s;
+    cursor: pointer;
+    @media (max-width: 1110px) {
+      margin-right: 34px;
+    }
+    @media (max-width: 570px) {
+      display: inline-block;
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: calc(50% - 40px);
+      height: 40px;
+      margin-left: 40px;
+      text-align: left;
+    }
+    @media (max-width: 430px) {
+      width: 50%;
+      margin-left: 0;
+    }
+    &:hover, &_active {
+      color: #fd7703;
+      text-shadow: 0 0 40px #f43117, 0 0 30px #f43117;
+    }
+
+    &:nth-of-type(1) {
+      padding-left: 0;
+      @media (max-width: 570px) {
+        padding-left: 40px;
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:last-of-type:hover, &:last-of-type.filter-item_active {
+      margin-right: 0;
+    }
+
+    &_choose {
+      &:hover:after {
+        box-shadow: 0 0 32px 18px #00b2fa;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 4;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        box-shadow: 0 0 12px 6px #fff;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        box-shadow: 0 0 32px 14px #00b2fa;
+        transition: box-shadow 0.2s;
+      }
+    }
+
+    &_new {
+      margin-right: 60px;
+      @media (max-width: 1110px) {
+        margin-right: 34px;
+      }
+      @media (max-width: 570px) {
+        margin-right: 0;
+      }
+      &:hover:after {
+        box-shadow: 0 0 32px 18px #17f494;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 4;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        box-shadow: 0 0 12px 6px #fff;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        box-shadow: 0 0 32px 14px #17f494;
+        transition: box-shadow 0.2s;
+      }
+    }
+
+    &_discount {
+      &:hover:after {
+        box-shadow: 0 0 32px 18px #f43d3d;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 4;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        box-shadow: 0 0 12px 6px #fff;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        box-shadow: 0 0 32px 14px #f43d3d;
+        transition: box-shadow 0.2s;
+      }
+    }
+  }
+  &__pentagon {
+    position: absolute;
+    left: 0;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      display: block;
+      height: 0;
+      width: 24px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 0px;
+      height: 0;
+      width: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
+
+    &_choose {
+      &:before {
+        border-bottom: 15px solid #00b2fa;
+      }
+      &:after {
+        border-top: 8px solid #00b2fa;
+      }
+    }
+
+    &_new {
+      &:before {
+        border-bottom: 15px solid #17f494;
+      }
+      &:after {
+        border-top: 8px solid #17f494;
+      }
+    }
+
+    &_discount {
+      &:before {
+        border-bottom: 15px solid #f43d3d;
+      }
+      &:after {
+        border-top: 8px solid #f43d3d;
+      }
+    }
+  }
+}

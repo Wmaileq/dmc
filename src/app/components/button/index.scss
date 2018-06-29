@@ -1,0 +1,67 @@
+.view-more {
+  position: relative;
+  height: 72px;
+  width: 309px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: border 0.2s;
+  &:hover {
+    span {
+      background-color: #ff8400;
+      box-shadow: 2px 2px 21px 2px rgba(#ff7800, 0.22);
+    }
+  }
+  &__border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    span {
+      position: absolute;
+      background-color: #303537;
+      height: 1px;
+      transition: all 0.2s;
+    }
+    &-tl {
+      top: 17px;
+      left: -37px;
+      width: 46px;
+      transform: rotate(129deg);
+    }
+    &-t {
+      top: 0;
+      left: 0;
+      width: 309px;
+      transform: rotate(180deg);
+    }
+    &-tr {
+      top: 17px;
+      left: 300px;
+      width: 46px;
+      transform: rotate(-128deg);
+    }
+    &-br {
+
+      top: 53px;
+      left: 300px;
+      width: 46px;
+      transform: rotate(-51deg);
+    }
+    &-b {
+      top: 71px;
+      left: 0;
+      width: 309px;
+    }
+    &-bl {
+      top: 53px;
+      left: -37px;
+      width: 46px;
+      transform: rotate(52deg);
+    }
+  }
+}

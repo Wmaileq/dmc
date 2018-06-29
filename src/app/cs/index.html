@@ -1,0 +1,35 @@
+//=include head.html
+  <body>
+//=include components/sidebar/index.html
+//=include components/topmenu/index.html
+//=include cs/header/index.html
+//=include cs/mega/index.html
+//=include cs/discounts/index.html
+//=include cs/popular/index.html
+//=include cs/all/index.html
+//=include cs/feedback/index.html
+  </body>
+
+<script>
+  window.onscroll = () => {
+    const topmenu = document.getElementById('topmenu');
+    if (window.scrollY > 0) {
+      topmenu.classList = 'topmenu topmenu_dark';
+    } else {
+      topmenu.classList = 'topmenu'
+    }
+
+
+    let elem = document.getElementById('sidebar');
+    let elemY = elem.scrollHeight;
+    let scroll = window.scrollY + window.innerHeight;
+    if (scroll > elemY) {
+      elem.classList = 'sidebar sidebar_fixed'
+    } else {
+      elem.classList = 'sidebar'
+    }
+  }
+
+</script>
+
+</html>

@@ -1,0 +1,51 @@
+.stats {
+  display: flex;
+  color: #fd6e06;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+  text-shadow: 0 0 40px #f43117, 0 0 30px #f43117;
+  &__item {
+    margin-right: 64px;
+    @media (max-width: 480px) {
+      margin-right: 32px;
+    }
+    @media (max-width: 410px) {
+      font-size: 24px;
+    }
+    @media (max-width: 390px) {
+      font-size: 22px;
+      margin-right: 18px;
+    }
+    @media (max-width: 350px) {
+      font-size: 18px;
+      margin-right: 18px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:after {
+      margin-top: -4px;
+      display: block;
+      color: #859ca4;
+      font-weight: 400px;
+      font-size: 14px;
+      text-shadow: none;
+      @media (max-width: 350px) {
+        font-size: 12px
+      }
+    }
+
+    &_cases:after {
+      content: 'Кейса открыто';
+    }
+
+    &_users:after {
+      content: 'Пользователей';
+    }
+
+    &_online:after {
+      content: 'Онлайн';
+    }
+  }
+}

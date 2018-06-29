@@ -1,0 +1,31 @@
+<section class="CSheader">
+  <div class="CSheader__letters">CS GO</div>
+  <div class="CSheader__overlay"></div>
+  <div id="soldiers" class="CSheader__scene">
+    <div data-depth="0.1" class="CSheader__soliders"></div>
+  </div>
+  <div class="container">
+    <div class="CSheader__container">
+      <div class="CSheader__wrapper">
+        <h1 class="CSheader__heading">Открываем кейсы CS GO с бонусами</h1>
+        <span class="CSheader__slogan">Товарищи! Начало повседневной работы по формированию позиции позволяет выполнять важные задания.</span>
+        <div class="CSheader__stats">
+//=include components/stats/index.html
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NPM: https://www.npmjs.com/package/parallax-js -->
+<script src="/parallax.min.js"></script>
+<script>
+  var soldiers = document.getElementById('soldiers');
+  var solidersParallax = new Parallax(soldiers, {
+    hoverOnly: true,
+    invertX: false,
+    limitY: 1,
+    scalarY: 0.0001,
+    scalarX: 5
+  });
+</script>

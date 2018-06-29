@@ -1,0 +1,113 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  background-color: #111213;
+  font-family: 'Circe', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+  font-family: 'Circe', sans-serif;
+
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+section {
+  padding-left: 250px;
+  @media (max-width: 1590px) {
+    padding-left: 220px;
+  }
+  @media (max-width: 1480px) {
+    padding-left: 180px;
+  }
+  @media (max-width: 1440px) {
+    padding-left: 165px;
+  }
+  @media (max-width: 1000px) {
+    padding-left: 0;
+  }
+}
+
+.container {
+  position: relative;
+  @media (min-width: 1400px) {
+    padding: 0;
+    min-width: 1200px;
+  }
+  @media (max-width: 1130px) {
+    padding: 0;
+    max-width: 920px
+  }
+  @media (max-width: 1110px) {
+    max-width: 860px
+  }
+  @media (max-width: 1000px) {
+    max-width: 940px;
+  }
+  @media (max-width: 960px) {
+    width: calc(100% - 30px);
+  }
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  @media (max-width: 380px) {
+    font-size: 42px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  @media (max-width: 1110px) {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circe-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

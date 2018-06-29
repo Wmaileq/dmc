@@ -1,0 +1,78 @@
+.discount {
+  position: relative;
+  overflow: hidden;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  width: 425px;
+  height: 227px;
+  background: url('/img/discount-bg.jpg') center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  @media (max-width: 1320px) {
+    width: 400px;
+  }
+  &__img {
+    position: absolute;
+    top: 53px;
+    left: 44px;
+    width: 180px;
+    animation: discount-item 8s ease infinite;
+    @media (max-width: 1199px) {
+      width: 160px;
+      left: 34px;
+    }
+    @media (max-width: 880px) {
+      width: 140px;
+      left: 25px;
+      top: 60px
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__wrapper {
+    margin-top: 50px;
+    width: 165px;
+    @media (max-width: 1320px) {
+      width: 145px;
+    }
+  }
+  &__text {
+    color: #f74512;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  &__name {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #748096;
+  }
+  &__old-price {
+    margin-top: 10px;
+    color: #f74612;
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+  &__price {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+@keyframes discount-item {
+    from {
+      transform: rotate(-10deg)
+    }
+    50% {
+      transform: rotate(10deg)
+    }
+    to {
+      transform: rotate(-10deg)
+    }
+
+}
+

@@ -1,0 +1,67 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 173px;
+  width: 100%;
+  height: 453px;
+  &__left {
+    width: 340px;
+    span {
+      margin-left: 10px;
+      vertical-align: top;
+      height: 59px;
+      line-height: 59px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+  &__icon {
+    width: 78px;
+    height: 59px;
+  }
+  &__text {
+    margin-top: 85px;
+    color: #484e56;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 22px;
+    color: #fc7305;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &__right {
+    width: 435px;
+    padding-top: 20px;
+  }
+
+  &__pay {
+    margin-top: 68px;
+  }
+
+  &__pay-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__pay-icons {
+    margin-top: 35px;
+  }
+
+  &__pay-icon {
+    margin-right: 20px;
+    height: 18px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.review {
+  position: relative;
+  margin-bottom: 65px;
+  display: flex;
+
+  &__foto {
+    padding-top: 4px;
+    margin-right: 75px;
+    width: 92px;
+    height: 108px;
+    flex-shrink: 0;
+    svg {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__wrapper {
+    flex-grow: 0;
+  }
+
+  &__heading {
+    display: block;
+    margin-bottom: 28px;
+    color: #f77304;
+    font-size: 18px;
+  }
+
+  &__text {
+    width: calc(100% - 95px);
+    color: #67717a;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .review__date {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #333940;
+    font-weight: 300;
+    font-size: 14px;
+    transform: rotate(-90deg) translateX(-50%);
+  }
+}
