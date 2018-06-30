@@ -9,18 +9,32 @@
   border: 0;
   cursor: pointer;
   transition: border 0.2s;
+  @media (max-width: 400px) {
+    width: 280px;
+    height: 65.24px;
+  }
+  @media (max-width: 360px) {
+    width: 220px;
+    height: 51.26px;
+  }
   &:hover {
     span {
       background-color: #ff8400;
       box-shadow: 2px 2px 21px 2px rgba(#ff7800, 0.22);
+    }
+    .view-more__border {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
     }
   }
   &__border {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
     span {
       position: absolute;
       background-color: #303537;
@@ -28,39 +42,38 @@
       transition: all 0.2s;
     }
     &-tl {
-      top: 17px;
-      left: -37px;
-      width: 46px;
+      top: 23.61%;
+      left: -11.97%;
+      width: 14.88%;
       transform: rotate(129deg);
     }
     &-t {
       top: 0;
       left: 0;
-      width: 309px;
+      width: 100%;
       transform: rotate(180deg);
     }
     &-tr {
-      top: 17px;
-      left: 300px;
-      width: 46px;
+      top: 23.61%;
+      left: 97.09%;
+      width: 14.88%;
       transform: rotate(-128deg);
     }
     &-br {
-
-      top: 53px;
-      left: 300px;
-      width: 46px;
+      top: 73.61%;
+      left: 97.09%;
+      width: 14.88%;
       transform: rotate(-51deg);
     }
     &-b {
-      top: 71px;
+      top: 98.61%;
       left: 0;
-      width: 309px;
+      width: 100%;
     }
     &-bl {
-      top: 53px;
-      left: -37px;
-      width: 46px;
+      top: 73.61%;
+      left: -11.97%;
+      width: 14.88%;
       transform: rotate(52deg);
     }
   }

@@ -2,6 +2,13 @@
   position: relative;
   margin-bottom: 65px;
   display: flex;
+  @media (max-width: 600px) {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
 
   &__foto {
     padding-top: 4px;
@@ -9,6 +16,13 @@
     width: 92px;
     height: 108px;
     flex-shrink: 0;
+    @media (max-width: 800px) {
+      margin-right: 45px;
+    }
+    @media (max-width: 600px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
     svg {
       position: relative;
       overflow: hidden;
@@ -26,6 +40,9 @@
     margin-bottom: 28px;
     color: #f77304;
     font-size: 18px;
+    @media (max-width: 600px) {
+      margin-bottom: 14px;
+    }
   }
 
   &__text {
@@ -33,6 +50,9 @@
     color: #67717a;
     font-size: 16px;
     font-weight: 300;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
 
   .review__date {

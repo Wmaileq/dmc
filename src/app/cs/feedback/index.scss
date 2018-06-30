@@ -1,9 +1,11 @@
 .feedback {
   position: relative;
-  height: 2304px;
   padding-top: 125px;
   background: #111213 url('/img/csgo-footer.jpg') center center no-repeat;
   background-size: cover;
+  @media (max-width: 1000px) {
+    padding-top: 75px;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -52,10 +54,16 @@
     font-size: 14px;
     top: 15px;
     right: 0;
+    @media (max-width: 600px) {
+      position: relative;
+    }
   }
 
   &__wrapper {
     margin-top: 106px;
+    @media (max-width: 992px) {
+      margin-top: 65px;
+    }
   }
 
   &__button {
@@ -102,6 +110,9 @@
     box-shadow: 38px 15px 98px 10px rgba(#030303, 0.29);
     border: 1px solid transparent;
     transition: all 0.2s;
+    @media (max-width: 800px) {
+      min-height: 280px;
+    }
     &:hover {
       border: 1px solid #ff8a00;
       box-shadow: 38px 15px 98px 10px rgba(#030303, 0.29), 0 0 27px 3px rgba(#ff8a00, 0.21), inset 0 0 27px 3px rgba(#ff8a00, 0.21);
@@ -114,6 +125,15 @@
       width: 1px;
       height: calc(100% - 160px);
       background-color: #1d2022;
+      @media (max-width: 1000px) {
+        left: 216px;
+      }
+      @media (max-width: 800px) {
+        left: 145px;
+      }
+      @media (max-width: 620px) {
+        display: none;
+      }
     }
   }
 
@@ -123,6 +143,16 @@
     width: 266px;
     padding-left: 60px;
     flex-shrink: 0;
+    @media (max-width: 1000px) {
+      width: 216px;
+      padding-left: 10px;
+    }
+    @media (max-width: 800px) {
+      width: 140px;
+    }
+    @media (max-width: 620px) {
+      display: none;
+    }
   }
 
   &__write-name {
@@ -131,6 +161,9 @@
     color: #fd7604;
     font-size: 16px;
     font-weight: 300;
+    @media (max-width: 800px) {
+      margin-top: 180px;
+    }
   }
 
   &__write-textarea {
@@ -141,6 +174,19 @@
     font-size: 16px;
     font-weight: 300;
     background-color: transparent;
+    @media (max-width: 860px) {
+      width: calc(100% - 420px);
+    }
+    @media (max-width: 800px) {
+      margin: 32px 20px;
+      width: calc(100% - 320px);
+    }
+    @media (max-width: 620px) {
+      width: calc(100% - 150px);
+    }
+    @media (max-width: 400px) {
+      width: calc(100% - 110px);
+    }
   }
 
   &__write-send {
@@ -157,6 +203,16 @@
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    @media (max-width: 860px) {
+      right: 45px;
+    }
+    @media (max-width: 440px) {
+      top: calc( 50% - 85px);
+      transform: scale(0.75)
+    }
+    @media (max-width: 400px) {
+      right: 15px
+    }
     &:hover {
       .feedback__write-line {
         box-shadow: 0 0 13px 1.5px #f47308;

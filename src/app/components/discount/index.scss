@@ -38,6 +38,9 @@
     @media (max-width: 1320px) {
       width: 145px;
     }
+    @media (max-width: 360px) {
+      width: 120px;
+    }
   }
   &__text {
     color: #f74512;
