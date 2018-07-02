@@ -1,36 +1,118 @@
-<section class="DOTAheader">
-  <div class="DOTAheader__logo"></div>
-  <div class="DOTAheader__overlay"></div>
-  <div id="pudge" class="DOTAheader__scene">
-    <div data-depth="0.1" class="DOTAheader__pudge"></div>
-  </div>
+<section class="CASEheader">
+  <div class="CASEheader__overlay"></div>
   <div class="container">
-    <div class="DOTAheader__container">
-      <div class="DOTAheader__wrapper">
-        <h1 class="DOTAheader__heading">Открываем кейсы DOTA GO с бонусами</h1>
-        <span class="DOTAheader__slogan">Товарищи! Начало повседневной работы по формированию позиции позволяет выполнять важные задания.</span>
-        <div class="DOTAheader__stats">
+    <div class="CASEheader__container">
+      <div class="CASEheader__wrapper">
+        <div class="CASEheader__wrapper-additional">
+          <h1 class="CASEheader__heading">Кейс ножей | Knife Happy lalala lala</h1>
+          <span class="CASEheader__slogan">Развернутое и веселое описание кейса стимулирующее продажи, создающее достойную конверсию</span>
+        </div>
+        <div class="CASEheader__stats">
           <!-- components/stats -->
-          <div class="stats stats_dota">
+          <div class="stats">
             <div class="stats__item stats__item_cases">12 456 323</div>
             <div class="stats__item stats__item_users">34 235</div>
             <div class="stats__item stats__item_online">239</div>
           </div>
         </div>
       </div>
+      <div class="CASEheader__main">
+        <div class="CASEheader__right">
+          <div class="CASEheader__case">
+            <!--components/case-->
+            <div class="case case_l">
+              <div class="case__border">
+                <span class="case__border-tl"></span>
+                <span class="case__border-tr"></span>
+                <span class="case__border-l"></span>
+                <span class="case__border-r"></span>
+                <span class="case__border-bl"></span>
+                <span class="case__border-br"></span>
+              </div>
+              <div class="case__bg"></div>
+              <div class="case__image">
+                <img src="/img/case-case.png" alt=".">
+              </div>
+            </div>
+          </div>
+          <div class="CASEheader__roulette">
+            <div class="CASEheader__roulette-wrapper">
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+              <div class="CASEheader__item">
+                <img src="/img/case-item.png" alt="">
+                <span>Blue-Knife | purple knife</span>
+              </div>
+            </div>
+          </div>
+          <div class="CASEheader__buttons">
+            <button class="CASEheader__button-open">
+              Открыть за 300 руб.
+              <div class="CASEheader__button-open-left"></div>
+              <div class="CASEheader__button-open-right"></div>
+            </button>
+
+            <button class="view-more view-more_s view-more_orange">
+              <div class="CASEheader__plus"></div>
+              Пополнить баланс
+              <span class="view-more__border">
+                <span class="view-more__border-tl"></span>
+                <span class="view-more__border-t"></span>
+                <span class="view-more__border-tr"></span>
+                <span class="view-more__border-br"></span>
+                <span class="view-more__border-b"></span>
+                <span class="view-more__border-bl"></span>
+              </span>
+            </button>
+
+            <button class="view-more view-more_xs">
+              Демо режим
+              <span class="view-more__border">
+                <span class="view-more__border-tl"></span>
+                <span class="view-more__border-t"></span>
+                <span class="view-more__border-tr"></span>
+                <span class="view-more__border-br"></span>
+                <span class="view-more__border-b"></span>
+                <span class="view-more__border-bl"></span>
+              </span>
+            </button>
+
+          </div>
+          <div class="CASEheader__hint">
+            <a href="#">Авторизуйтесь</a> и получите 100 бонусных рублей
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- NPM: https://www.npmjs.com/package/parallax-js -->
-<script src="/parallax.min.js"></script>
-<script>
-  var soldiers = document.getElementById('pudge');
-  var solidersParallax = new Parallax(soldiers, {
-    hoverOnly: true,
-    invertX: false,
-    limitY: 1,
-    scalarY: 0.0001,
-    scalarX: 5
-  });
-</script>

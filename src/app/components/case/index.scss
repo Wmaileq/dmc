@@ -110,6 +110,34 @@
     }
   }
 
+  &_l {
+    width: 246px;
+    height: 280px;
+    &:after {
+      top: 50%;
+      box-shadow: 0 0 100px 70px #5a7785;
+    }
+    &:hover {
+      .case__image {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+    }
+    .case__border {
+      width: 246px;
+      height: 280px;
+    }
+    .case__image {
+      height: 188px;
+      top: 50%;
+      left: calc(50% + 20px);
+      transform: translate(-50%, -50%);
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
   &_s {
     width: 120px;
     height: 200px;
