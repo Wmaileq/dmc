@@ -6,7 +6,6 @@
   width: 195px;
   padding-top: 33px;
   padding-bottom: 100px;
-  background-color: #181b1d;
   box-shadow: 8px 0 128px 12px rgba(0,0,0,1);
   @media (max-width: 1480px) {
     width: 160px;
@@ -19,6 +18,15 @@
     position: fixed;
     top: auto;
     bottom: 0;
+  }
+  &_cs {
+    background-color: #181b1d;
+  }
+  &_dota {
+    background-color: #1b181d;
+  }
+  &_pubg {
+    background-color: #111311;
   }
   &__logo {
     position: relative;

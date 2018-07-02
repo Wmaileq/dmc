@@ -1,0 +1,222 @@
+.mega {
+  @media (max-width: 840px){
+    overflow: scroll;
+  }
+}
+.DOTAmega {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  z-index: 12;
+  width: 480px;
+  height: 374px;
+  background: url('/img/mega-bg-dota.jpg') center center no-repeat;
+  background-size: cover;
+  @media (max-width: 1199px) {
+    width: 360px;
+    height: 280.5px;
+    bottom: -75px;
+  }
+
+  @media (max-width: 840px) {
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    left: -15px;
+  }
+  @media (max-width: 470px) {
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 160%;
+    @media (max-width: 840px) {
+      height: 290px
+    }
+    @media (max-width: 470px) {
+      width: 200%;
+    }
+  }
+  &__heading {
+    position: relative;
+    margin-top: 44px;
+    margin-left: 50px;
+    padding-left: 56px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+    @media (max-width: 1199px) {
+      margin-top: 22px;
+      margin-left: 25px;
+      font-size: 20px;
+      padding-left: 34px;
+    }
+    @media (max-width: 840px) {
+      padding-top: 22px;
+      margin-top: 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      height: 32px;
+      width: 26px;
+      background: url('/img/icons/fire_white.svg') center center no-repeat;
+      background-size: cover;
+      @media (max-width: 1199px) {
+        top: 0;
+        height: 28px;
+        width: 21.5px;
+      }
+      @media (max-width: 840px) {
+        top: 16px
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    width: 50%;
+    height: 50%;
+    background: url('/img/dota-mega.png') center center no-repeat;
+    background-size: cover;
+    animation: mega-case 6s ease infinite;
+    @media (max-width: 1199px) {
+      top: 80px;
+      left: 100px;
+    }
+    @media (max-width: 840px) {
+      width: 200px;
+      height: 140px;
+    }
+    @media (max-width: 380px) {
+      left: 55px
+    }
+
+  }
+  &__description {
+    position: absolute;
+    bottom: 44px;
+    left: 53px;
+    color: #e8ffb0;
+    font-size: 16px;
+    font-weight: 300;
+    @media (max-width: 1199px) {
+      left: 25px;
+      bottom: 22px;
+    }
+  }
+
+  &__price {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 41.25%;
+    height: 27%;
+    padding-left: 56px;
+    background-color: #111213;
+    @media (max-width: 1199px) {
+      padding-left: 32px;
+    }
+  }
+
+  &__old-price {
+    margin-top: 25px;
+    display: block;
+    color: #606972;
+    font-size: 16px;
+    text-decoration: line-through;
+    @media (max-width: 1199px) {
+      margin-top: 12px;
+    }
+  }
+  &__new-price {
+    color: #ffffff;
+    font-size: 24px;
+  }
+
+  &__arrows-block {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    @media (max-width: 840px) {
+      right: 25%
+    }
+    @media (max-width: 470px) {
+      right: 35%
+    }
+    @media (max-width: 840px) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    &:hover {
+      &:before, &:after {
+        background-color: #f9550d;
+        box-shadow: 0 0 29px 3px rgba(#f8520e, 0.77);
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background-color: #4d4d58;
+      transition: all 0.2s;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 8px;
+      background-color: #4d4d58;
+      transition: all 0.2s;
+    }
+
+    &_left {
+      position: absolute;
+      top: 0px;
+      right: 66px;
+      &:before {
+        transform: translateY(18px);
+      }
+      &:after {
+        transform: translate(2px, 10px) skew(-35deg);
+      }
+    }
+
+    &_right {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      &:before {
+        transform: translateY(18px);
+      }
+      &:after {
+        transform: translate(24px, 10px) skew(35deg);
+      }
+    }
+  }
+}
+@keyframes mega-case {
+    from {
+      transform: rotate(-10deg)
+    }
+    50% {
+      transform: rotate(10deg)
+    }
+    to {
+      transform: rotate(-10deg)
+    }
+
+}

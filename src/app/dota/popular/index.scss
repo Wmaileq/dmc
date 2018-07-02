@@ -1,0 +1,100 @@
+.DOTApopular {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  padding-top: 145px;
+  padding-bottom: 135px;
+  @media (max-width: 880px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  @media (max-width: 640px) {
+    padding-top: 40px;
+  }
+  &:after {
+    display: none;
+  }
+
+  &__wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 840px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__heading {
+    position: relative;
+    padding-left: 44px;
+    padding-top: 3px;
+    color: #fff;
+    letter-spacing: 0.4px;
+    @media (max-width: 1100px) {
+      padding-top: 10px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 32px;
+      width: 26px;
+      background: url('/img/icons/fire.svg') center center no-repeat;
+      background-size: cover;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 13px;
+      top: 16px;
+      height: 1px;
+      width: 1px;
+      box-shadow: 0 0 35px 10px #fd7604;
+    }
+  }
+
+  &__wrapper-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1199px) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin: 60px 20px 0;
+    flex-shrink: 0;
+    @media (max-width: 888px) {
+      margin: 60px 10px 0;
+    }
+    &_large {
+      width: 40%;
+      @media (max-width: 880px) {
+        width: 360px;
+      }
+      @media (max-width: 420px) {
+        width: 320px;
+      }
+      @media (max-width: 380px) {
+        width: 240px;
+      }
+    }
+    &_mln {
+      margin-left: 0;
+      @media (max-width: 888px) {
+        margin-left: 10px
+      }
+    }
+    &_mrn {
+      margin-right: 0;
+      @media (max-width: 1199px) {
+        margin-right: 15px;
+      }
+      @media (max-width: 888px) {
+        margin-right: 10px
+      }
+    }
+  }
+}

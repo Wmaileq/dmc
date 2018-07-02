@@ -4,7 +4,18 @@
   font-weight: 300;
   font-size: 30px;
   letter-spacing: 0.8px;
-  text-shadow: 0 0 40px #f43117, 0 0 30px #f43117;
+  &_cs {
+    color: #fd6e06;
+    text-shadow: 0 0 40px #f43117, 0 0 30px #f43117;
+  }
+  &_dota {
+    color: #f072ff;
+    text-shadow: 0 0 40px #e013c1, 0 0 30px #e013c1;
+  }
+  &_pubg {
+    color: #14dd6c;
+    text-shadow: 0 0 40px #13e06c, 0 0 30px #13e06c;
+  }
   &__item {
     margin-right: 64px;
     @media (max-width: 480px) {

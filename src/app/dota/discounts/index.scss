@@ -1,0 +1,281 @@
+.DOTAdiscounts {
+  position: relative;
+  padding-top: 207px;
+  @media (max-width: 840px) {
+    padding-top: 75px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    width: 1867px;
+    height: 1080px;
+    background: url('/img/dota-discounts-bg.png') center center no-repeat;
+    opacity: 0.1;
+    background-size: cover;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    @media (max-width: 880px) {
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 480px;
+    flex-shrink: 0;
+    @media (max-width: 1280px) {
+      width: 360px;
+    }
+    @media (max-width: 1110px) {
+      width: 320px;
+    }
+    @media (max-width: 880px) {
+      margin: 0 auto 40px;
+      width: 80%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    margin-left: 4px;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 0.7px;
+  }
+
+  &__arrows-block {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    &:hover {
+      &:before, &:after {
+        background-color: #f9550d;
+        box-shadow: 0 0 29px 3px rgba(#f8520e, 0.77);
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background-color: #4d4d58;
+      transition: all 0.2s;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 8px;
+      background-color: #4d4d58;
+      transition: all 0.2s;
+    }
+
+    &_left {
+      position: absolute;
+      top: 0px;
+      right: 66px;
+      &:before {
+        transform: translateY(18px);
+      }
+      &:after {
+        transform: translate(2px, 10px) skew(-35deg);
+      }
+    }
+
+    &_right {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      &:before {
+        transform: translateY(18px);
+      }
+      &:after {
+        transform: translate(24px, 10px) skew(35deg);
+      }
+    }
+  }
+
+  &__slider-image {
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+
+    background: url('/img/dota-slider-bg.jpg') center center no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 0  76px 8px rgba(0,0,0,0.23);
+  }
+
+  &__slider-item {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: url('/img/dota-discount.png') center center no-repeat;
+    background-size: contain;
+    animation-name: slider-item;
+    animation-timing-function: ease;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+
+  &__pag {
+    position: absolute;
+    bottom: -2px;
+
+    height: 2px;
+    width: 100%;
+
+    background-color: #000000;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 2px;
+      width: 33.333%;
+      background-color: #fb6309;
+      box-shadow: 0 0 46px 5px rgba(#f8500f, 0.56);
+      transition: left 0.2s;
+    }
+
+    &_position {
+      &_1 {
+        &:before {
+          left: 0;
+        }
+      }
+      &_2 {
+        &:before {
+          left: 33.333%
+        }
+      }
+      &_3 {
+        &:before {
+          left: 66.666%
+        }
+      }
+    }
+  }
+
+  &__best {
+    margin-top: 7px;
+    margin-left: 82px;
+    width: 100%;
+    @media (max-width: 1399px) {
+      margin-left: 50px;
+    }
+    @media (max-width: 1110px) {
+      margin-left: 25px;
+    }
+    @media (max-width: 880px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__best-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media (max-width: 1199px) {
+      flex-wrap: wrap
+    }
+    @media (max-width: 580px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  &__best-heading {
+    color: #fff;
+    letter-spacing: 0.5px;
+    @media (max-width: 1399px) {
+      margin-right: 40px;
+    }
+    @media (max-width: 1320px) {
+      margin-right: 20px;
+    }
+    @media (max-width: 545px) {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+
+  &__best-item {
+    padding-top: 38px;
+    @media (max-width: 580px) {
+      width: 33.33%;
+      .case_s {
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 450px) {
+      width: 50%;
+    }
+
+  }
+
+  &__filter {
+    margin-top: 4px;
+    display: flex;
+    @media (max-width: 545px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__filter-item {
+    font-size: 16px;
+    color: #748696;
+    margin-right: 28px;
+    transition: all 0.2s;
+    cursor: pointer;
+    @media (max-width: 1199px) {
+      margin-right: 14px;
+    }
+    &:hover, &_active {
+      color: #fd7703;
+      text-shadow: 0 0 40px #f43117, 0 0 30px #f43117;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+@keyframes slider-item {
+    from {
+      transform: rotate(-10deg)
+    }
+    50% {
+      transform: rotate(10deg)
+    }
+    to {
+      transform: rotate(-10deg)
+    }
+
+}

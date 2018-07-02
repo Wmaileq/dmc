@@ -1,0 +1,36 @@
+<section class="PUBGheader">
+  <div class="PUBGheader__logo"></div>
+  <div class="PUBGheader__overlay"></div>
+  <div id="soldiers" class="PUBGheader__scene">
+    <div data-depth="0.1" class="PUBGheader__soldiers"></div>
+  </div>
+  <div class="container">
+    <div class="PUBGheader__container">
+      <div class="PUBGheader__wrapper">
+        <h1 class="PUBGheader__heading">Открываем кейсы PUBG с бонусами</h1>
+        <span class="PUBGheader__slogan">Товарищи! Начало повседневной работы по формированию позиции позволяет выполнять важные задания.</span>
+        <div class="PUBGheader__stats">
+          <!-- components/stats -->
+          <div class="stats stats_pubg">
+            <div class="stats__item stats__item_cases">12 456 323</div>
+            <div class="stats__item stats__item_users">34 235</div>
+            <div class="stats__item stats__item_online">239</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NPM: https://www.npmjs.com/package/parallax-js -->
+<script src="/parallax.min.js"></script>
+<script>
+  var soldiers = document.getElementById('soldiers');
+  var solidersParallax = new Parallax(soldiers, {
+    hoverOnly: true,
+    invertX: false,
+    limitY: 1,
+    scalarY: 0.0001,
+    scalarX: 5
+  });
+</script>

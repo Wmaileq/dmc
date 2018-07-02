@@ -1,0 +1,36 @@
+<section class="DOTAheader">
+  <div class="DOTAheader__logo"></div>
+  <div class="DOTAheader__overlay"></div>
+  <div id="pudge" class="DOTAheader__scene">
+    <div data-depth="0.1" class="DOTAheader__pudge"></div>
+  </div>
+  <div class="container">
+    <div class="DOTAheader__container">
+      <div class="DOTAheader__wrapper">
+        <h1 class="DOTAheader__heading">Открываем кейсы DOTA GO с бонусами</h1>
+        <span class="DOTAheader__slogan">Товарищи! Начало повседневной работы по формированию позиции позволяет выполнять важные задания.</span>
+        <div class="DOTAheader__stats">
+          <!-- components/stats -->
+          <div class="stats stats_dota">
+            <div class="stats__item stats__item_cases">12 456 323</div>
+            <div class="stats__item stats__item_users">34 235</div>
+            <div class="stats__item stats__item_online">239</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NPM: https://www.npmjs.com/package/parallax-js -->
+<script src="/parallax.min.js"></script>
+<script>
+  var soldiers = document.getElementById('pudge');
+  var solidersParallax = new Parallax(soldiers, {
+    hoverOnly: true,
+    invertX: false,
+    limitY: 1,
+    scalarY: 0.0001,
+    scalarX: 5
+  });
+</script>
