@@ -3,10 +3,12 @@
   padding-top: 118px;
   padding-bottom: 100px;
   background-color: #141718;
+  background: url('/img/contents-bg.png') top right no-repeat;
   background-size: cover;
   @media (max-width: 1000px) {
     padding-top: 60px;
   }
+
   &_mycases {
     .contents__heading {
       margin: 0;
