@@ -39,6 +39,9 @@
     @media (max-width: 840px) {
       flex-wrap: wrap;
     }
+    @media (max-width: 740px) {
+      flex-direction: column;
+    }
   }
 
   &__heading {
@@ -115,6 +118,17 @@
     margin-top: auto;
     margin-bottom: 0;
     color:  #fd7604;
+    @media (min-width: 741px) and (max-width: 1199px) {
+      position: absolute;
+      right: 0;
+      top: 50px;
+    }
+    @media (max-width: 740px) {
+      width: 160px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
     &:before {
       content: '';
       position: absolute;
